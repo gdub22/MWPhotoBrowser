@@ -74,6 +74,7 @@ typedef NS_OPTIONS(NSUInteger, SDWebImageOptions) {
      * By default, placeholder images are loaded while the image is loading. This flag will delay the loading
      * of the placeholder image until after the image has finished loading.
      */
+<<<<<<< HEAD:MWPhotoBrowser/Libraries/SDWebImage/SDWebImageManager.h
     SDWebImageDelayPlaceholder = 1 << 9,
 
     /**
@@ -88,6 +89,15 @@ typedef void(^SDWebImageCompletionBlock)(UIImage *image, NSError *error, SDImage
 
 typedef void(^SDWebImageCompletionWithFinishedBlock)(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL);
 
+=======
+    SDWebImageDelayPlaceholder = 1 << 9
+};
+
+typedef void(^SDWebImageCompletionBlock)(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL);
+
+typedef void(^SDWebImageCompletionWithFinishedBlock)(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL);
+
+>>>>>>> upstream/master:MWPhotoBrowser/Libraries/SDWebImage/SDWebImage/SDWebImageManager.h
 typedef NSString *(^SDWebImageCacheKeyFilterBlock)(NSURL *url);
 
 
